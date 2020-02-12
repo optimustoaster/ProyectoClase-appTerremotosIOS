@@ -3,20 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02B5D1CC23EB44530076C3E4 /* modeloTerremoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5D1CB23EB44530076C3E4 /* modeloTerremoto.swift */; };
+		02B5EBA623E4A8A800EBC436 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5EBA523E4A8A800EBC436 /* TableViewCell.swift */; };
+		02B5EBA823E4AB5300EBC436 /* ListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5EBA723E4AB5300EBC436 /* ListaTableViewController.swift */; };
 		02BFBB7223DB690A00CAF2B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BFBB7123DB690A00CAF2B1 /* AppDelegate.swift */; };
 		02BFBB7423DB690A00CAF2B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BFBB7323DB690A00CAF2B1 /* SceneDelegate.swift */; };
 		02BFBB7623DB690A00CAF2B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BFBB7523DB690A00CAF2B1 /* ViewController.swift */; };
 		02BFBB7923DB690A00CAF2B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BFBB7723DB690A00CAF2B1 /* Main.storyboard */; };
 		02BFBB7B23DB690C00CAF2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BFBB7A23DB690C00CAF2B1 /* Assets.xcassets */; };
 		02BFBB7E23DB690C00CAF2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BFBB7C23DB690C00CAF2B1 /* LaunchScreen.storyboard */; };
+		02C0B00523EDF4CE006B8506 /* ajustes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0B00423EDF4CE006B8506 /* ajustes.swift */; };
 		721002F53525BE5B3DCBDD83 /* Pods_AppTerremotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BD3BF4232C1E77CD98B92B /* Pods_AppTerremotos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02B5D1CB23EB44530076C3E4 /* modeloTerremoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeloTerremoto.swift; sourceTree = "<group>"; };
+		02B5EBA523E4A8A800EBC436 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		02B5EBA723E4AB5300EBC436 /* ListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewController.swift; sourceTree = "<group>"; };
 		02BFBB6E23DB690A00CAF2B1 /* AppTerremotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTerremotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02BFBB7123DB690A00CAF2B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02BFBB7323DB690A00CAF2B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +32,7 @@
 		02BFBB7A23DB690C00CAF2B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02BFBB7D23DB690C00CAF2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02BFBB7F23DB690C00CAF2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C0B00423EDF4CE006B8506 /* ajustes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ajustes.swift; sourceTree = "<group>"; };
 		1126801BCABA87A1DD9167E7 /* Pods-AppTerremotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTerremotos.release.xcconfig"; path = "Target Support Files/Pods-AppTerremotos/Pods-AppTerremotos.release.xcconfig"; sourceTree = "<group>"; };
 		36BD3BF4232C1E77CD98B92B /* Pods_AppTerremotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTerremotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCB9FB65B00F9AA8F083D5C /* Pods-AppTerremotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTerremotos.debug.xcconfig"; path = "Target Support Files/Pods-AppTerremotos/Pods-AppTerremotos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,9 +75,13 @@
 				02BFBB7323DB690A00CAF2B1 /* SceneDelegate.swift */,
 				02BFBB7523DB690A00CAF2B1 /* ViewController.swift */,
 				02BFBB7723DB690A00CAF2B1 /* Main.storyboard */,
+				02C0B00423EDF4CE006B8506 /* ajustes.swift */,
 				02BFBB7A23DB690C00CAF2B1 /* Assets.xcassets */,
 				02BFBB7C23DB690C00CAF2B1 /* LaunchScreen.storyboard */,
 				02BFBB7F23DB690C00CAF2B1 /* Info.plist */,
+				02B5EBA523E4A8A800EBC436 /* TableViewCell.swift */,
+				02B5EBA723E4AB5300EBC436 /* ListaTableViewController.swift */,
+				02B5D1CB23EB44530076C3E4 /* modeloTerremoto.swift */,
 			);
 			path = AppTerremotos;
 			sourceTree = "<group>";
@@ -88,7 +100,6 @@
 				9DCB9FB65B00F9AA8F083D5C /* Pods-AppTerremotos.debug.xcconfig */,
 				1126801BCABA87A1DD9167E7 /* Pods-AppTerremotos.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,8 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				02BFBB7623DB690A00CAF2B1 /* ViewController.swift in Sources */,
+				02B5D1CC23EB44530076C3E4 /* modeloTerremoto.swift in Sources */,
+				02B5EBA623E4A8A800EBC436 /* TableViewCell.swift in Sources */,
+				02C0B00523EDF4CE006B8506 /* ajustes.swift in Sources */,
 				02BFBB7223DB690A00CAF2B1 /* AppDelegate.swift in Sources */,
 				02BFBB7423DB690A00CAF2B1 /* SceneDelegate.swift in Sources */,
+				02B5EBA823E4AB5300EBC436 /* ListaTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
