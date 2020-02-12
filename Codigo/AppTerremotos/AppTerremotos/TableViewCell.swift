@@ -9,7 +9,15 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var labelNombreSitio: UILabel!
+    @IBOutlet weak var labelValorMagnitud: UILabel!
+    @IBOutlet weak var labelValorHora: UILabel!
+    @IBOutlet weak var labelValorPosibleTsunami: UILabel!
+    @IBOutlet weak var buttonMaps: UIButton!
+    @IBOutlet weak var buttonUsgs: UIButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

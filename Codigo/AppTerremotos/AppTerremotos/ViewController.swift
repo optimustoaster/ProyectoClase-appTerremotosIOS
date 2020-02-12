@@ -7,44 +7,57 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
 class ViewController: UIViewController {
-
     
-    var url:String = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
+    //@IBOutlet weak var selectorMomento: UISegmentedControl!
+    //@IBOutlet weak var selectorMagnitud: UISegmentedControl!
+    private var momento = ""
+    private var urls = ajustes()
+    
+    @IBAction func selectorMomento(_ sender: UISegmentedControl) {
+        
+        if sender.selectedSegmentIndex == 0 {
+            urls.setListaSeleccionada(seleccion: 0)
+        }else if sender.selectedSegmentIndex == 1{
+            urls.setListaSeleccionada(seleccion: 1)
+        }else{
+            urls.setListaSeleccionada(seleccion: 2)
+        }
+        
+    }
+    
+    @IBAction func selectorIntensidad(_ sender: UISegmentedControl) {
+        
+        if sender.selectedSegmentIndex == 0{
+            urls.setUrlSeleccionada(seleccion: 0)
+        }else if sender.selectedSegmentIndex == 1{
+            urls.setUrlSeleccionada(seleccion: 1)
+        }else if sender.selectedSegmentIndex == 2{
+            urls.setUrlSeleccionada(seleccion: 2)
+        }else{
+            urls.setUrlSeleccionada(seleccion: 3)
+        }
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
-        
-        // Pedimos el archivo (con AlamoFire) JSON a la url contenida en la configuracion
-        Alamofire.request(self.url).responseJSON{ response in
-
-            if let result = response.result.value {
-                if let JSON = try? JSON(result){
-                    var test = JSON["features"][0]["properties"]["place"].string!
-                    
-                    
-                    print("Test While")
-                    var contador: Int = 0
-                    while !JSON["features"][contador]["properties"].isEmpty{
-                            //print(contador)
-                            print(JSON["features"][contador]["properties"]["place"].string!)
-                            contador += 1
-
-                    }
-                    
-                }
-            }
-            
-        }
-        
+        urls.setListaSeleccionada(seleccion: 0)
+        urls.setUrlSeleccionada(seleccion: 0)
     }
-
-
+    
+    @IBAction func buttonGuardarAjustes(_ sender: Any) {}
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){// Todo: FIX
+    if (segue.identifier == "guardarSettings"){
+        let vc = segue.destination as! ListaTableViewController
+        vc.url =  self.urls.getUrl()
+    }
+    
+    }
+    
 }
 
