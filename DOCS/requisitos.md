@@ -3,11 +3,10 @@
 ## V 1.0
 ### Que hace la aplicación:
 - [x] Mostrar los terremotos, su magnitud, la posibilidad de tsunami, y la hora
-- [ ] Link a su localización en Google Maps
-- [ ] Link al artículo de USGS para más información
-- [ ] Filtrar por Hora
-- [ ] Filtrar por Magnitud
-- [ ] Filtrar por Posibilidad de Tsunami
+- [x] Link a su localización en Google Maps
+- [x] Link al artículo de USGS para más información
+- [x] Filtrar por Tiempo
+- [x] Filtrar por Magnitud
 
 ### Que NO va a hacer la aplicación:
 - Filtrar por localización
