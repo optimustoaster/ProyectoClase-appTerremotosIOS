@@ -16,6 +16,8 @@ class terremoto{
     private var tsunami:String = "N/A"
     private var linkUsgs = ""
     private var linkMaps = ""
+    private var latitud = 0.0
+    private var longitud = 0.0
 
     func setLugar(tmpLugar:String){
         self.lugar = tmpLugar
@@ -50,6 +52,10 @@ class terremoto{
         // Latitud / Longitud
         self.linkMaps = "https://www.google.com/maps/search/?api=1&query=\(latitud),\(longitud)" //+ latitud + "," + longitud
         
+        // Apaño temporal
+        self.latitud = Double(latitud) as! Double
+        self.longitud = Double(longitud) as! Double
+        
     }
     
     func getLinkMaps() -> String{
@@ -80,6 +86,14 @@ class terremoto{
     
     func getLinkUsgs() -> String{
         return self.linkUsgs
+    }
+    
+    func getLatitud() -> Double{
+        return self.latitud
+    }
+    
+    func getLongitud() -> Double{
+        return self.longitud
     }
     
 }
