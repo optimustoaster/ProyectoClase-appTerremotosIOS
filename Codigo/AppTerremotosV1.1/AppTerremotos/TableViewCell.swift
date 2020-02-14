@@ -16,6 +16,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var labelValorPosibleTsunami: UILabel!
     @IBOutlet weak var buttonMaps: UIButton!
     @IBOutlet weak var buttonUsgs: UIButton!
+    @IBOutlet weak var buttonInAppMap: UIButton!
     
     
     override func awakeFromNib() {

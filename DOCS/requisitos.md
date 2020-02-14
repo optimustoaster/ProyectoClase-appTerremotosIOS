@@ -15,9 +15,18 @@
 ## V 1.1
 ### Que hace la aplicación:
 - Todo lo de la V 1.0
-- REMOVE: Link a su localización en Google Maps
-- [ ] Mostrar el terremoto seleccionado en el mapa dentro de la app
+- [x] Mostrar el terremoto seleccionado en el mapa dentro de la app
+
+### Que NO va a hacer la aplicación:
+- Filtrar por localización
+
+
+## V 1.2
+### Que hace la aplicación:
+- Todo lo de la V 1.1
 - [ ] Mostrar en un mapa todos los terremotos
+- [ ] Almacenar los ajustes del usuario
+- [ ] En vez de abrir el mapa en el navegador, abrirlo en la app de Apple Maps
 
 ### Que NO va a hacer la aplicación:
 - Filtrar por localización
