@@ -48,9 +48,8 @@ class terremoto{
     }
     
     func buildMapsLink(longitud:String, latitud:String){
-        // https://www.google.com/maps/search/?api=1&query=36.26577,-92.54324
         // Latitud / Longitud
-        self.linkMaps = "https://www.google.com/maps/search/?api=1&query=\(latitud),\(longitud)" //+ latitud + "," + longitud
+        self.linkMaps = "http://maps.apple.com/?address=\(latitud),\(longitud)"
         
         // Apaño temporal
         self.latitud = Double(latitud) as! Double

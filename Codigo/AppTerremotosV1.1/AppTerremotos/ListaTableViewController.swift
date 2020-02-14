@@ -105,9 +105,13 @@ class ListaTableViewController: UITableViewController {
     }
     
     @IBAction func buttonMapa(_ sender: UIButton) {
-        print("Abriendo \(self.terremotos[sender.tag].getLinkMaps())")
-        self.openBrowser(link: self.terremotos[sender.tag].getLinkMaps())
-        
+        let directionsURL = self.terremotos[sender.tag].getLinkMaps()
+        guard let url = URL(string: directionsURL) else {
+            return
+        }
+
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+
     }
     @IBAction func actionButtonUsgs(_ sender: UIButton) {
         print("Abriendo \(self.terremotos[sender.tag].getLinkUsgs())")
