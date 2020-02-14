@@ -14,6 +14,7 @@ class ListaTableViewController: UITableViewController {
 
     var url:String = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
     var terremotos:[terremoto] = []
+    var terremotoSeleccionado = terremoto()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +82,24 @@ class ListaTableViewController: UITableViewController {
         }
     }
     
+    @IBAction func buttonInAppMap(_ sender: UIButton) {
+        var terremotoTmp = self.terremotos[sender.tag]
+        
+        // Obtenemos los datos
+        self.terremotoSeleccionado = terremotoTmp
+        
+        //performSegue(withIdentifier: "mostrarTerremoto", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "mostrarTerremoto"){
+            var vc =  segue.destination as! MapaViewController
+            vc.terremotoSeleccionado = self.terremotoSeleccionado
+        }
+    }
+    
+    
+    
     @IBAction func actualizar(segue: UIStoryboardSegue){
         self.cargarDatos()
     }
@@ -124,6 +143,7 @@ class ListaTableViewController: UITableViewController {
         // al clickarlos, se sepa que url coger de la lista de objetos.
         cell.buttonMaps.tag = indexPath.row
         cell.buttonUsgs.tag = indexPath.row
+        cell.buttonInAppMap.tag = indexPath.row
 
         return cell
     }

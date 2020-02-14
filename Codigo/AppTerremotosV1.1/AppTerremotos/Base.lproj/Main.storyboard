@@ -88,9 +88,19 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0Y-rG-res">
+                                            <rect key="frame" x="137" y="103" width="74" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="inApp Map"/>
+                                            <connections>
+                                                <action selector="buttonInAppMap:" destination="zMU-cx-Xha" eventType="touchUpInside" id="iT7-Mx-fPD"/>
+                                                <segue destination="F7t-qf-DbY" kind="show" identifier="mostrarTerremoto" id="u64-T9-4vs"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="buttonInAppMap" destination="H0Y-rG-res" id="9mf-4B-rU0"/>
                                     <outlet property="buttonMaps" destination="Djy-P2-0Gf" id="w1A-hb-JjB"/>
                                     <outlet property="buttonUsgs" destination="iPd-m7-qfZ" id="YTF-Ik-Hbx"/>
                                     <outlet property="labelNombreSitio" destination="E63-IM-6ic" id="CDx-MS-2zL"/>
@@ -116,6 +126,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="279-vU-02a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1098.5507246376812" y="-197.54464285714286"/>
+        </scene>
+        <!--Mapa View Controller-->
+        <scene sceneID="xJV-iB-Q4o">
+            <objects>
+                <viewController id="F7t-qf-DbY" customClass="MapaViewController" customModule="AppTerremotos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h3F-NO-4pD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ewr-st-iY7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uuB-FY-saI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wrR-LV-RS4"/>
+                    <connections>
+                        <outlet property="mapView" destination="Ewr-st-iY7" id="VYh-6J-AfC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bpk-bJ-zha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255.07246376811597" y="529.6875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Gs4-Vu-dVg">
@@ -183,7 +218,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAx-sK-ROE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SMG-9z-c4e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-346.37681159420293" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="-255" y="-198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wvh-oE-j9k">
