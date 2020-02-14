@@ -17,6 +17,7 @@
 		02BFBB7B23DB690C00CAF2B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02BFBB7A23DB690C00CAF2B1 /* Assets.xcassets */; };
 		02BFBB7E23DB690C00CAF2B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02BFBB7C23DB690C00CAF2B1 /* LaunchScreen.storyboard */; };
 		02C0B00523EDF4CE006B8506 /* ajustes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C0B00423EDF4CE006B8506 /* ajustes.swift */; };
+		02CE49DD23F719FB00672866 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE49DC23F719FB00672866 /* MapaViewController.swift */; };
 		721002F53525BE5B3DCBDD83 /* Pods_AppTerremotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36BD3BF4232C1E77CD98B92B /* Pods_AppTerremotos.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		02BFBB7D23DB690C00CAF2B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02BFBB7F23DB690C00CAF2B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02C0B00423EDF4CE006B8506 /* ajustes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ajustes.swift; sourceTree = "<group>"; };
+		02CE49DC23F719FB00672866 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		1126801BCABA87A1DD9167E7 /* Pods-AppTerremotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTerremotos.release.xcconfig"; path = "Target Support Files/Pods-AppTerremotos/Pods-AppTerremotos.release.xcconfig"; sourceTree = "<group>"; };
 		36BD3BF4232C1E77CD98B92B /* Pods_AppTerremotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppTerremotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCB9FB65B00F9AA8F083D5C /* Pods-AppTerremotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppTerremotos.debug.xcconfig"; path = "Target Support Files/Pods-AppTerremotos/Pods-AppTerremotos.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				02BFBB7C23DB690C00CAF2B1 /* LaunchScreen.storyboard */,
 				02BFBB7F23DB690C00CAF2B1 /* Info.plist */,
 				02B5EBA523E4A8A800EBC436 /* TableViewCell.swift */,
+				02CE49DC23F719FB00672866 /* MapaViewController.swift */,
 				02B5EBA723E4AB5300EBC436 /* ListaTableViewController.swift */,
 				02B5D1CB23EB44530076C3E4 /* modeloTerremoto.swift */,
 			);
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02BFBB7623DB690A00CAF2B1 /* ViewController.swift in Sources */,
+				02CE49DD23F719FB00672866 /* MapaViewController.swift in Sources */,
 				02B5D1CC23EB44530076C3E4 /* modeloTerremoto.swift in Sources */,
 				02B5EBA623E4A8A800EBC436 /* TableViewCell.swift in Sources */,
 				02C0B00523EDF4CE006B8506 /* ajustes.swift in Sources */,
