@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027413F024005EEE001E1AAB /* ViewControllerMapaAllTerremotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027413EF24005EEE001E1AAB /* ViewControllerMapaAllTerremotos.swift */; };
 		02B5D1CC23EB44530076C3E4 /* modeloTerremoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5D1CB23EB44530076C3E4 /* modeloTerremoto.swift */; };
 		02B5EBA623E4A8A800EBC436 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5EBA523E4A8A800EBC436 /* TableViewCell.swift */; };
 		02B5EBA823E4AB5300EBC436 /* ListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B5EBA723E4AB5300EBC436 /* ListaTableViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		027413EF24005EEE001E1AAB /* ViewControllerMapaAllTerremotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMapaAllTerremotos.swift; sourceTree = "<group>"; };
 		02B5D1CB23EB44530076C3E4 /* modeloTerremoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeloTerremoto.swift; sourceTree = "<group>"; };
 		02B5EBA523E4A8A800EBC436 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		02B5EBA723E4AB5300EBC436 /* ListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				02BFBB7323DB690A00CAF2B1 /* SceneDelegate.swift */,
 				02BFBB7523DB690A00CAF2B1 /* ViewController.swift */,
 				02BFBB7723DB690A00CAF2B1 /* Main.storyboard */,
+				027413EF24005EEE001E1AAB /* ViewControllerMapaAllTerremotos.swift */,
 				02C0B00423EDF4CE006B8506 /* ajustes.swift */,
 				02BFBB7A23DB690C00CAF2B1 /* Assets.xcassets */,
 				02BFBB7C23DB690C00CAF2B1 /* LaunchScreen.storyboard */,
@@ -229,6 +232,7 @@
 				02BFBB7223DB690A00CAF2B1 /* AppDelegate.swift in Sources */,
 				02BFBB7423DB690A00CAF2B1 /* SceneDelegate.swift in Sources */,
 				02B5EBA823E4AB5300EBC436 /* ListaTableViewController.swift in Sources */,
+				027413F024005EEE001E1AAB /* ViewControllerMapaAllTerremotos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

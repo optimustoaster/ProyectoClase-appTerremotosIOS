@@ -87,14 +87,18 @@ class ListaTableViewController: UITableViewController {
         
         // Obtenemos los datos
         self.terremotoSeleccionado = terremotoTmp
-        
-        //performSegue(withIdentifier: "mostrarTerremoto", sender: self)
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "mostrarTerremoto"){
             var vc =  segue.destination as! MapaViewController
             vc.terremotoSeleccionado = self.terremotoSeleccionado
+        }
+        
+        if (segue.identifier == "mapaAllTerremotos"){
+            var vc = segue.destination as! ViewControllerMapaAllTerremotos
+            vc.terremotos = self.terremotos
         }
     }
     

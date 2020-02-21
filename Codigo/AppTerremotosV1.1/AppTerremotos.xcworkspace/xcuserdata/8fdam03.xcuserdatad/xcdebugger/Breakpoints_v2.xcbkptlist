@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
             endingLineNumber = "104"
-            landmarkName = "actualizar(segue:)"
-            landmarkType = "7">
+            landmarkName = "ListaTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
-            landmarkName = "actualizar(segue:)"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -269,6 +269,114 @@
             endingLineNumber = "28"
             landmarkName = "selectorMomento(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4C45A591-47BD-4D32-BBF8-0B25E9E9F389"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppTerremotos/ViewControllerMapaAllTerremotos.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewControllerMapaAllTerremotos"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4C45A591-47BD-4D32-BBF8-0B25E9E9F389 - dadff272a4f4a449"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppTerremotos.ViewControllerMapaAllTerremotos.mapView.getter : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "AppTerremotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam03/Desktop/appios/Codigo/AppTerremotosV1.1/AppTerremotos/ViewControllerMapaAllTerremotos.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "4C45A591-47BD-4D32-BBF8-0B25E9E9F389 - 319d79ddbc3ee07d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppTerremotos.ViewControllerMapaAllTerremotos.mapView.setter : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "AppTerremotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam03/Desktop/appios/Codigo/AppTerremotosV1.1/AppTerremotos/ViewControllerMapaAllTerremotos.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "4C45A591-47BD-4D32-BBF8-0B25E9E9F389 - efcc85ba3763054a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppTerremotos.ViewControllerMapaAllTerremotos.mapView.modify : Swift.Optional&lt;__C.MKMapView&gt;"
+                  moduleName = "AppTerremotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam03/Desktop/appios/Codigo/AppTerremotosV1.1/AppTerremotos/ViewControllerMapaAllTerremotos.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "4C45A591-47BD-4D32-BBF8-0B25E9E9F389 - beb1bec37ac8e41b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppTerremotos.ViewControllerMapaAllTerremotos.mapView.modify : Swift.Optional&lt;__C.MKMapView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AppTerremotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam03/Desktop/appios/Codigo/AppTerremotosV1.1/AppTerremotos/ViewControllerMapaAllTerremotos.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "4C45A591-47BD-4D32-BBF8-0B25E9E9F389 - 1eca59e7a6ba1828"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppTerremotos.ViewControllerMapaAllTerremotos.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AppTerremotos.ViewControllerMapaAllTerremotos"
+                  moduleName = "AppTerremotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam03/Desktop/appios/Codigo/AppTerremotosV1.1/AppTerremotos/ViewControllerMapaAllTerremotos.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "4C45A591-47BD-4D32-BBF8-0B25E9E9F389 - bbb8adc080701a1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppTerremotos.ViewControllerMapaAllTerremotos.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AppTerremotos.ViewControllerMapaAllTerremotos&gt;"
+                  moduleName = "AppTerremotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/8fdam03/Desktop/appios/Codigo/AppTerremotosV1.1/AppTerremotos/ViewControllerMapaAllTerremotos.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "92">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

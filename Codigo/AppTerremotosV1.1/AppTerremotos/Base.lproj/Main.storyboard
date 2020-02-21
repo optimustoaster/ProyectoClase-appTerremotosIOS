@@ -7,6 +7,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller Mapa All Terremotos-->
+        <scene sceneID="zeu-fk-o3b">
+            <objects>
+                <viewController id="dzC-NN-TAf" customClass="ViewControllerMapaAllTerremotos" customModule="AppTerremotos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGe-Kq-eJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xjd-qK-yLv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xjd-qK-yLv" firstAttribute="centerX" secondItem="xGe-Kq-eJ0" secondAttribute="centerX" id="4EH-Kv-rMW"/>
+                            <constraint firstItem="Xjd-qK-yLv" firstAttribute="leading" secondItem="aFp-la-lyG" secondAttribute="leading" id="9GY-KE-0Uk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Xjd-qK-yLv" secondAttribute="bottom" constant="-34" id="Lmh-px-uSC"/>
+                            <constraint firstItem="Xjd-qK-yLv" firstAttribute="top" secondItem="aFp-la-lyG" secondAttribute="top" id="gJb-Dp-EYP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aFp-la-lyG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IXC-1n-Tyi"/>
+                    <connections>
+                        <outlet property="mapView" destination="Xjd-qK-yLv" id="lkv-kV-Nny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4vG-5X-EVY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-259.4202898550725" y="-859.15178571428567"/>
+        </scene>
         <!--Lista de Terremotos-->
         <scene sceneID="Pzt-KS-q5G">
             <objects>
@@ -150,6 +180,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lista de Terremotos" id="I0X-6c-9xX">
+                        <barButtonItem key="leftBarButtonItem" title="Mapa" id="Oqo-pz-boI">
+                            <connections>
+                                <segue destination="dzC-NN-TAf" kind="show" identifier="mapaAllTerremotos" id="qxM-Ko-lvP"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Ajustes &gt;" id="STo-OF-iFy">
                             <connections>
                                 <segue destination="rne-zP-Tsc" kind="show" id="Hm2-NV-0cI"/>
@@ -159,7 +194,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="279-vU-02a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1098.5507246376812" y="-197.54464285714286"/>
+            <point key="canvasLocation" x="-1032" y="-199"/>
         </scene>
         <!--Mapa View Controller-->
         <scene sceneID="xJV-iB-Q4o">
@@ -274,7 +309,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dAx-sK-ROE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="SMG-9z-c4e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-255.13392857142856" y="-198.55072463768118"/>
+            <point key="canvasLocation" x="-259" y="-184"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Wvh-oE-j9k">

@@ -25,7 +25,6 @@ class ajustes{
         "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson"]
     
     func getUrl() -> String{
-        //return self.url
         let lista = getListaSeleccionada()
         return lista[self.urlSeleccionada]
     }
