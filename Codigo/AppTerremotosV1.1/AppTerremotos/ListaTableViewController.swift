@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class ListaTableViewController: UITableViewController {
 
+    private let defaults = UserDefaults.standard
     var url:String = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
     var terremotos:[terremoto] = []
     var terremotoSeleccionado = terremoto()
@@ -21,6 +22,10 @@ class ListaTableViewController: UITableViewController {
         
         
         // Pedimos el archivo (con AlamoFire) JSON a la url contenida en la configuracion
+        if(self.defaults.string(forKey: "url") != nil){
+            self.url = self.defaults.string(forKey: "url")!
+        }
+        
         self.cargarDatos()
 
         // Uncomment the following line to preserve selection between presentations
