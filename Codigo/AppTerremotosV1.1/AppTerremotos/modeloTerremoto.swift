@@ -47,7 +47,7 @@ class terremoto{
         self.tsunami = tmpTsunami
     }
     
-    func buildMapsLink(longitud:String, latitud:String){
+    func buildMapsLink(longitud:String, latitud:String){1
         // Latitud / Longitud
         self.linkMaps = "http://maps.apple.com/?address=\(latitud),\(longitud)"
         

@@ -9,7 +9,6 @@
 import Foundation
 
 class ajustes{
-    //private var url:String = ""
     private var listaSeleccionada = 0
     private var urlSeleccionada = 0
     private let urlUltimaHora = ["https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson",
@@ -56,8 +55,6 @@ class ajustes{
     }
     
     func setUrlSeleccionada(seleccion: Int){
-        //let lista = getListaSeleccionada()
-        //url = lista[seleccion]
         self.urlSeleccionada = seleccion
     }
     

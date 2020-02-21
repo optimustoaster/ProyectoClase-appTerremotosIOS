@@ -24,9 +24,9 @@
 ## V 1.2
 ### Que hace la aplicación:
 - Todo lo de la V 1.1
-- [ ] Mostrar en un mapa todos los terremotos
-- [ ] Almacenar los ajustes del usuario
-- [ ] En vez de abrir el mapa en el navegador, abrirlo en la app de Apple Maps
+- [ ] Mostrar en un mapa de todos los terremotos
+- [x] Almacenar los ajustes del usuario
+- [x] En vez de abrir el mapa en el navegador, abrirlo en la app de Apple Maps
 
 ### Que NO va a hacer la aplicación:
 - Filtrar por localización
